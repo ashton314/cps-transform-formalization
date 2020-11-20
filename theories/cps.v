@@ -16,7 +16,6 @@ From Coq Require Import Strings.String.
 (* ################################################################# *)
 (** * Syntax Definition *)
 
-
 Inductive sexpr : Type :=
   | SId (x : string)
   | SLambda (args : list string) (body : sexpr)
