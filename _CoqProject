@@ -1,0 +1,4 @@
+# See https://stackoverflow.com/questions/57545797/how-to-compile-coq-files-with-proof-general-emacs/57546615
+
+-Q theories/ CpsFormalization
+theories/cps.v
