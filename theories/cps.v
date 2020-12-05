@@ -72,6 +72,7 @@ Fixpoint extend_env (env : environment) (params : list string) (args : list sexp
   | x :: rest_params, arg :: rest_args => (x !-> arg ; (extend_env env rest_params rest_args))
   end.
 
+(* Consider defining this as a relation so I can model a partial function; alternatively, instead of returning sexpr; return sexpr + error *)
 Fixpoint seval (env : environment) (expr : sexpr) : sexpr :=
   match expr with
   | SId x => env x
